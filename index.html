@@ -1,27 +1,16 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<!doctype html>
+<html ng-app="threeInput">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="js/angular.min.js"></script>
-    <script src="js/underscore-min.js"></script>
-    <script src="js/myApp.numSumm.js"></script>
+    <title>Three Inputs | Sum for fun</title>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-route.min.js"></script>
+    <script src="js/lib/underscore-min.js"></script>
+    <script src="js/lesson-02/threeInputApp.js"></script>
+    <script src="js/lesson-02/threeInputCtrl.js"></script>
+    <script src="js/lesson-02/mdSummDirective.js"></script>
 </head>
-<body ng-controller="numSummCtrl">
-<h1>Домашнее задание #1</h1>
-<table>
-    <tr>
-        <td>Число #1</td>
-        <td><input ng-model="numbers[0]" placeholder="{{numbers[0]}}"></td>
-    </tr>
-    <tr>
-        <td>Число #2</td>
-        <td><input ng-model="numbers[1]" placeholder="{{numbers[1]}}"></td>
-    </tr>
-    <tr>
-        <td>Сумма</td>
-        <td><input ng-model="" placeholder="{{addition(numbers)}}"></td>
-    </tr>
-</table>
+<body>
+<ng-view></ng-view>
 </body>
 </html>
